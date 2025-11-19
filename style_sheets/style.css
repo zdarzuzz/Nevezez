@@ -3,6 +3,13 @@
 @import "adaptive.css";
 
 @font-face {
+  font-family: "Truin_Ruin";
+
+  scr: url("../fonts/Truin-Ruin.ttf") format("ttf");
+  font-weight: bold;
+}
+
+@font-face {
   font-family: "Manrope";
 
   scr: url("../fonts/Manrope-VariableFont_wght.ttf") format("ttf");
