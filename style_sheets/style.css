@@ -2,12 +2,11 @@
 @import "layout.css";
 @import "adaptive.css";
 
-@font-face {
-  font-family: "Truin_Ruin";
+/* @font-face {
+  font-family: "minecraft";
 
-  scr: url("../fonts/Truin-Ruin.ttf") format("ttf");
-  font-weight: bold;
-}
+  scr: url("../fonts/minecraft_0.otf") format("otf");
+} */
 
 @font-face {
   font-family: "Manrope";
