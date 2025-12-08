@@ -1,0 +1,28 @@
+@import "reset.css";
+@import "layout.css";
+@import "animation.css";
+@import "adaptive.css";
+
+/* @font-face {
+  font-family: "minecraft";
+
+  scr: url("../fonts/minecraft_0.otf") format("otf");
+} */
+
+@font-face {
+  font-family: "Manrope";
+
+  scr: url("../fonts/Manrope-VariableFont_wght.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Defectica";
+
+  scr: url("../fonts/Defectica.otf") format("otf");
+}
+
+@font-face {
+  font-family: "HandWriting";
+
+  scr: url("../fonts/HandWriting_1.otf") format("otf");
+}

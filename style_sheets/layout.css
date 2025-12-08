@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 1440px;
+  display: grid;
+  background-color: antiquewhite;
+  position: center;
+  margin: 0 auto;
+}
+
+main {
+  width: 80%;
+  margin: 2vw auto;
+}
+section {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2vw;
+}
+
+.mario {
+  width: 68px;
+  height: 68px;
+  background-image: url("../images/mario-walk-n-jump-68.png");
+  animation: marioWalk 0.8s infinite steps(1), marioMove 8s infinite linear;
+}
+#mario {
+  overflow: hidden;
+  padding-top: 68px;
+}
+.mario:hover {
+  animation-play-state: paused;
+  filter: invert(100%);
+}
