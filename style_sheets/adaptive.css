@@ -149,7 +149,7 @@
     height: 11vw;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   /* Первая секция */
   #First_Section {
     height: 47vw;
