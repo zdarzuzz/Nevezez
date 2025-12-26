@@ -26,32 +26,3 @@
 
   src: url("../fonts/HandWriting_1.otf") format("otf");
 }
-
-@import "reset.css";
-@import "layout.css";
-@import "animation.css";
-@import "adaptive.css";
-
-/* @font-face {
-  font-family: "minecraft";
-
-  scr: url("../fonts/minecraft_0.otf") format("otf");
-} */
-
-@font-face {
-  font-family: "Manrope";
-
-  src: url("../fonts/Manrope-VariableFont_wght.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "Defectica";
-
-  src: url("../fonts/Defectica.otf") format("otf");
-}
-
-@font-face {
-  font-family: "HandWriting";
-
-  src: url("../fonts/HandWriting_1.otf") format("otf");
-}
