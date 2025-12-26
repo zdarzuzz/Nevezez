@@ -1,0 +1,2583 @@
+<<<<<<< HEAD
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  width: 100%;
+  background-color: #fff;
+  position: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* Первая секция */
+
+#First_Section {
+  width: 100%;
+  overflow: hidden;
+  height: 37.5vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #231686;
+}
+
+.bl01 {
+  width: 100%;
+  height: 9.236vw;
+  overflow: hidden;
+  position: relative;
+  background-color: #231686;
+}
+#nevezez1 {
+  height: 9.236vw;
+  position: absolute;
+  animation: nevezez_animation1 5s infinite linear;
+}
+#nevezez2 {
+  height: 9.236vw;
+  position: absolute;
+  animation: nevezez_animation2 5s infinite linear;
+}
+
+.bl02 {
+  overflow: hidden;
+  width: 100vw;
+  background-color: #fe572a;
+  height: 5vw;
+}
+
+#rectangle1 {
+  height: 5vw;
+  position: absolute;
+  animation: running-animation2 10s infinite linear;
+}
+#rectangle2 {
+  height: 5vw;
+  position: absolute;
+  animation: running-animation3 10s infinite linear;
+}
+.bl03 {
+  width: 100%;
+  height: 18.472vw;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+#title {
+  position: absolute;
+  width: 85%;
+  margin: 0.694vw 13.8vw 0 13.5vw;
+}
+
+#robot {
+  position: absolute;
+  margin-bottom: 1.3vw;
+  width: 20vw;
+  animation: RobotMove 2.5s infinite linear;
+}
+
+.bl04 {
+  overflow: hidden;
+  width: 100vw;
+  background-color: #fe572a;
+  height: 5vw;
+}
+
+/* Вторая секция */
+
+#Second_Section {
+  width: 100%;
+  height: 39.4vw;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #6053be;
+}
+.bl05 {
+  width: 100%;
+  height: 5.138vw;
+  position: relative;
+  background-color: #231686;
+}
+#candy_star1 {
+  height: 5.138vw;
+  position: absolute;
+  animation: nevezez_animation1 5s infinite linear;
+}
+#candy_star2 {
+  height: 5.138vw;
+  position: absolute;
+  animation: nevezez_animation2 5s infinite linear;
+}
+
+.bl06 {
+  background-color: #dfff0d;
+  width: 12.2vw;
+  display: flex;
+  height: 21.3194vw;
+  position: absolute;
+  margin-top: 5.138vw;
+}
+#tree {
+  position: absolute;
+  margin: 1.38vw 0 0 0.4861vw;
+  width: 11vw;
+  animation: scale 2s infinite linear;
+}
+.bl07 {
+  background-color: #fe572a;
+  border: 0.5vw #97f2ff solid;
+  width: 12.2vw;
+  height: 8.05vw;
+  position: absolute;
+  margin: 26.4194vw 0 0 0;
+}
+#snow1 {
+  position: absolute;
+  margin: 1.38vw 0 0 1.0416vw;
+  width: 4vw;
+  animation: jump1 2s infinite linear;
+}
+#snow2 {
+  position: absolute;
+  margin: 1.0416vw 0 0 6vw;
+  width: 4vw;
+  animation: jump2 2s infinite linear;
+}
+
+.bl0607 {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  flex-direction: row;
+}
+/* 3д вращение */
+
+.bl08 {
+  background-color: #6053be;
+  width: 100vw;
+  margin: 5vw 0 0 0;
+  height: 29.375vw;
+  position: absolute;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  flex-direction: row;
+}
+
+/* По середине */
+.box {
+  position: absolute;
+  width: 10vw;
+  height: 20vw;
+  left: 32vw;
+  top: calc(50%-15vw);
+  left: calc(50%-10vw);
+  transform: perspective(100vw) rotateY(0deg);
+  transform-style: preserve-3d;
+}
+/* .box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7vw;
+  bottom: -10vw;
+  left: 0;
+  background: #000;
+  filter: blur(4vw);
+  opacity: 0.5;
+  transform: rotateX(90deg);
+} */
+.box div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 5vw;
+  left: 0;
+  transform-style: preserve-3d;
+  animation: animate 5s linear infinite;
+}
+.box div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #ffffff00, #ffffff13, #ffffff00);
+  border-radius: 2vw;
+}
+
+.box div img:nth-child(1) {
+  transform: rotateX(0deg);
+}
+.box div img:nth-child(2) {
+  transform: rotateX(45deg);
+}
+.box div img:nth-child(3) {
+  transform: rotateX(-45deg);
+}
+.box div img:nth-child(4) {
+  transform: rotateX(90deg);
+}
+
+/* Слева */
+.box1 {
+  position: absolute;
+  width: 10vw;
+  height: 20vw;
+  left: 10vw;
+  top: calc(50%-15vw);
+  left: calc(50%-10vw);
+  transform: perspective(100vw) rotateY(-45deg);
+  transform-style: preserve-3d;
+}
+/* .box1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7vw;
+  bottom: -10vw;
+  left: 0;
+  background: #000;
+  filter: blur(4vw);
+  opacity: 0.5;
+  transform: rotateX(90deg);
+} */
+.box1 div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 5vw;
+  left: 0;
+  transform-style: preserve-3d;
+  animation: animate 5s linear infinite;
+}
+.box1 div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #ffffff00, #ffffff65, #ffffff00);
+  border-radius: 2vw;
+}
+
+.box1 div img:nth-child(1) {
+  transform: rotateX(0deg);
+}
+.box1 div img:nth-child(2) {
+  transform: rotateX(45deg);
+}
+.box1 div img:nth-child(3) {
+  transform: rotateX(-45deg);
+}
+.box1 div img:nth-child(4) {
+  transform: rotateX(90deg);
+}
+
+/* Справа */
+.box2 {
+  position: absolute;
+  width: 10vw;
+  height: 20vw;
+  left: 53vw;
+  top: calc(50%-15vw);
+  left: calc(50%-10vw);
+  transform: perspective(100vw) rotateY(45deg);
+  transform-style: preserve-3d;
+}
+/* .box2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7vw;
+  bottom: -10vw;
+  left: 0;
+  background: #000;
+  filter: blur(4vw);
+  opacity: 0.5;
+  transform: rotateX(90deg);
+} */
+.box2 div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 5vw;
+  left: 0;
+  transform-style: preserve-3d;
+  animation: animate 5s linear infinite;
+}
+.box2 div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #ffffff00, #ffffff65, #ffffff00);
+  border-radius: 2vw;
+}
+
+.box2 div img:nth-child(1) {
+  transform: rotateX(0deg);
+}
+.box2 div img:nth-child(2) {
+  transform: rotateX(45deg);
+}
+.box2 div img:nth-child(3) {
+  transform: rotateX(-45deg);
+}
+.box2 div img:nth-child(4) {
+  transform: rotateX(90deg);
+}
+.bl09 {
+  background-color: #fe572a;
+  border: 0.5vw #97f2ff solid;
+  width: 12.2vw;
+
+  height: 8.05vw;
+  position: absolute;
+  margin: 5.138vw 0 0 86.5527vw;
+}
+#snow3 {
+  position: absolute;
+  width: 4vw;
+  margin: 1.38vw 0 0 1.0416vw;
+  animation: jump1 2s infinite linear;
+}
+#snow4 {
+  position: absolute;
+  width: 4vw;
+  margin: 1.0416vw 0 0 6vw;
+  animation: jump2 2s infinite linear;
+}
+
+.bl10 {
+  background-color: #dfff0d;
+  width: 12.2vw;
+  height: 21.3194vw;
+  position: absolute;
+  overflow: hidden;
+  margin: 13.15vw 0 0 86.5527vw;
+}
+#tree2 {
+  position: absolute;
+  margin: 1.78vw 0 0 0.7861vw;
+  width: 11vw;
+  animation: scale 2s infinite linear;
+}
+.bl0910 {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  flex-direction: row;
+}
+/* Третья секция */
+
+#Third_Section {
+  width: 100%;
+  overflow: hidden;
+  height: 12.2vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #231686;
+}
+
+.bl11 {
+  width: 100%;
+  height: 5.138vw;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  margin: 34.5138vw 0 0 0;
+  background-color: #231686;
+}
+#candy_star1 {
+  height: 5.138vw;
+  position: absolute;
+  animation: nevezez_animation1 5s infinite linear;
+}
+#candy_star2 {
+  height: 5.138vw;
+  position: absolute;
+  animation: nevezez_animation2 5s infinite linear;
+}
+.bl1213 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+.bl12 {
+  background-color: #dfff0d;
+  border: #fe572a 0.5vw solid;
+  width: 12.2vw;
+  height: 12.2vw;
+  position: relative;
+}
+.venok {
+  position: absolute;
+  margin: 0.5vw 0 0 0.5vw;
+  width: 10vw;
+  animation: venok 1s ease-in-out infinite;
+}
+
+.bl13 {
+  background-color: #685bc7;
+  border: #dfff0d 0.5vw solid;
+  width: 12.2vw;
+  position: relative;
+  height: 12.2vw;
+}
+#dom {
+  position: absolute;
+  margin: 0.2472vw 0 0 1.3vw;
+  width: 9vw;
+  animation: dom 1s ease-in-out infinite;
+}
+
+.bl14 {
+  background-color: #fe572a;
+  width: 100%;
+  height: 12.2vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: ro;
+  position: relative;
+}
+#sani {
+  position: absolute;
+  width: 35vw;
+  margin: 0.3472vw 0 0 27vw;
+  animation: sani 2s infinite linear;
+}
+.bl1516 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+.bl15 {
+  background-color: #685bc7;
+  border: #dfff0d 0.5vw solid;
+  width: 12.2vw;
+  position: relative;
+  margin: 0 0 0 74vw;
+  height: 12.2vw;
+}
+#sock {
+  position: absolute;
+  width: 9vw;
+  margin: 0vw 0 0 1.0416vw;
+  animation: venok 1s ease-in-out infinite;
+}
+.bl16 {
+  background-color: #dfff0d;
+  border: #fe572a 0.5vw solid;
+  width: 12.2vw;
+  position: relative;
+  margin: 0 0 0 0vw;
+  height: 12.2vw;
+}
+#list {
+  position: absolute;
+  width: 9vw;
+  margin: 1.5vw 0 0 1.38vw;
+  animation: dom 1s ease-in-out infinite;
+}
+
+/* Четвертая секция */
+
+#Forth_Section {
+  width: 100%;
+  height: 68vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background-color: #231686;
+}
+
+.bl17 {
+  width: 100vw;
+  height: 5.34vw;
+  background-color: #685bc7;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.banana {
+  line-height: 4.6725vw;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  animation: running-animation 5s infinite linear;
+  white-space: nowrap;
+}
+#banana1 {
+  animation: running-animation1 5s infinite linear;
+}
+
+#banana2 {
+  animation: running-animation 5s infinite linear;
+}
+
+.bl18 {
+  background-color: #231686;
+  position: absolute;
+  width: 33.2415vw;
+  height: 12.1485vw;
+  border: 0.534vw solid #daff02;
+  margin: 5.34vw 0 0 0;
+}
+.snow {
+  position: absolute;
+  margin: 0.20025vw 0 0 0;
+  animation: snow2 1s ease-in-out infinite;
+  width: 10.68vw;
+  height: auto;
+}
+.snow1 {
+  position: absolute;
+  margin: 0.20025vw 0 0 11.01375vw;
+  animation: snow 1s ease-in-out infinite;
+  width: 10.68vw;
+  height: auto;
+}
+.snow2 {
+  position: absolute;
+  margin: 0.20025vw 0 0 22vw;
+  animation: snow2 1s ease-in-out infinite;
+  width: 10.68vw;
+  height: auto;
+}
+
+.bl19 {
+  width: 33.70875vw;
+  height: 8.01vw;
+  background-color: #231686;
+  margin: 5.3472vw 0 0 33.2415vw;
+  position: absolute;
+}
+.robot_goleft {
+  margin: 0 0 0 4.6725vw;
+  position: absolute;
+  width: 25.365vw;
+  height: auto;
+}
+.door {
+  position: absolute;
+  height: 8.01vw;
+  width: auto;
+  animation: door1 2s ease-in-out infinite;
+}
+
+.bl20 {
+  background-color: #231686;
+  width: 24.331vw;
+  height: 12.1485vw;
+  position: absolute;
+  overflow: hidden;
+  margin: 5.3472vw 0 0 66.6vw;
+  border: 0.534vw #fe572a solid;
+}
+.cookie1 {
+  width: 10.68vw;
+  height: auto;
+  position: absolute;
+  margin: 0.6675vw 0 0 1.569vw;
+  animation: jump1 2s infinite;
+}
+.cookie2 {
+  width: 10.68vw;
+  height: auto;
+  position: absolute;
+  margin: 0.6675vw 0 0 11.0475vw;
+  animation: jump2 2s infinite;
+}
+
+.bl21 {
+  width: 9vw;
+  max-width: 9vw;
+  height: 45.59025vw;
+  z-index: 2;
+  margin: 5.34vw 0 0 91vw;
+  background-color: #daff02;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: flex;
+  position: absolute;
+}
+.arrow_right {
+  line-height: 45.59025vw;
+  position: absolute;
+  animation: arrow1 3.5s linear infinite;
+  white-space: nowrap;
+  width: 8.277vw;
+  height: auto;
+}
+#arrow1 {
+  animation: arrow1 3s linear infinite;
+  margin: 0vw 0 0 0.5vw;
+}
+#arrow2 {
+  animation: arrow2 3s linear infinite;
+  margin: 0vw 0 0 0.5vw;
+}
+
+.bl22 {
+  width: 33.20875vw;
+  height: 4.20525vw;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 13.31vw 0 0 33.2415vw;
+}
+.bl23 {
+  width: 4.20525vw;
+  height: 33.20875vw;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 17.4485vw 0 0 29.03625vw;
+  z-index: 2;
+}
+.bl24 {
+  width: 4.20525vw;
+  height: 33.20875vw;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 17.4485vw 0 0 66.45025vw;
+  z-index: 2;
+}
+.bl25 {
+  width: 33.20875vw;
+  height: 4.20525vw;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 50.624vw 0 0 33.2415vw;
+}
+
+.bl26 {
+  position: absolute;
+  background-color: #685bc7;
+  width: 8.34375vw;
+  height: 45.3235vw;
+  z-index: 2;
+  margin: 17.4485vw 0 0 0vw;
+  overflow: hidden;
+}
+.arrow_left {
+  line-height: 45.59025vw;
+  position: absolute;
+  width: 8.544vw;
+  height: auto;
+  margin-top: 0.2vw;
+  animation: arrow2 3.5s linear infinite;
+  white-space: nowrap;
+}
+#arrow3 {
+  animation: arrow3 3s linear infinite;
+}
+#arrow4 {
+  animation: arrow4 3s linear infinite;
+}
+
+.bl27 {
+  position: absolute;
+  overflow: hidden;
+  background-color: #daff02;
+  width: 20.69275vw;
+  height: 17.02125vw;
+  z-index: 2;
+  margin: 17.4485vw 0 0 8.34375vw;
+  border: 0.534vw #fe572a solid;
+}
+.clock1 {
+  position: absolute;
+  width: 16.6875vw;
+  height: auto;
+  margin: -0.6675vw 0 0 1.66875vw;
+}
+.clock2 {
+  position: absolute;
+  width: 16.6875vw;
+  height: auto;
+  margin: -0.6675vw 0 0 1.66875vw;
+  animation: rotate 3s infinite;
+}
+
+.bl28 {
+  position: absolute;
+  overflow: hidden;
+  background-color: #685bc7;
+  width: 20.79275vw;
+  height: 16.25425vw;
+  z-index: 2;
+  margin: 34.46975vw 0 0 8.27375vw;
+}
+.surprize {
+  position: absolute;
+  margin: 0.201vw 0 0 2.0025vw;
+  width: 16.02vw;
+  height: auto;
+  animation: scale 2s infinite linear;
+}
+
+.bl29 {
+  width: 24.8vw;
+  height: 12vw;
+  position: absolute;
+  border: 0.534vw solid #231686;
+  background-color: #daff02;
+  margin: 50.8vw 0 0 8.34375vw;
+  z-index: 2;
+}
+.car {
+  position: absolute;
+  animation: logo 2s infinite linear;
+  width: 12.015vw;
+  height: auto;
+}
+
+.bl30 {
+  background-color: #231686;
+  position: absolute;
+  width: 33.00875vw;
+  height: 8.07675vw;
+  margin: 54.8625vw 0 0 33.3415vw;
+}
+.door1 {
+  position: absolute;
+  animation: door2 2s ease-in-out infinite;
+  margin: 0 65.075vw 0 0;
+  width: 33.20875vw;
+}
+.robot_goright {
+  margin: 0 0 14.2578vw 4.6725vw;
+  position: absolute;
+  width: 25.365vw;
+  height: auto;
+}
+
+.bl31 {
+  background-color: #fe572a;
+  position: absolute;
+  margin: 17.3485vw 0 0 70.0754vw;
+  width: 8vw;
+  height: 33.38875vw;
+  overflow: hidden;
+  z-index: 4;
+}
+.re {
+  animation: bounce 2s infinite;
+  width: 7.476vw;
+  height: auto;
+  margin-left: 0.267vw;
+}
+
+.bl32 {
+  position: absolute;
+  width: 12.88275vw;
+  height: 45.55vw;
+  z-index: 3;
+  background-color: #685bc7;
+  margin: 17.4485vw 0 0 78.0053vw;
+}
+
+.star {
+  position: absolute;
+  width: 6.675vw;
+  height: auto;
+  margin: 4.6725vw 0 0 3.1375vw;
+  background-size: 100% 100%;
+  animation: snow_rot 3s ease-in-out infinite both;
+}
+.star1 {
+  position: absolute;
+  width: 6.675vw;
+  height: auto;
+  margin: 19.3575vw 0 0 3.1375vw;
+  background-size: 100% 100%;
+  animation: snow_rot 3s ease-in-out infinite both;
+}
+.star2 {
+  position: absolute;
+  width: 6.675vw;
+  height: auto;
+  margin: 33.375vw 0 0 3.1375vw;
+  background-size: 100% 100%;
+  animation: snow_rot 3s ease-in-out infinite both;
+}
+
+.bl33 {
+  position: absolute;
+  background-color: #231686;
+  width: 11.7vw;
+  height: 12.21525vw;
+  z-index: 3;
+  overflow: hidden;
+  border: 0.534vw solid #fe572a;
+  margin: 50.62375vw 0 0 66.4vw;
+}
+.berry {
+  padding: 0.267vw 0 0 1.13475vw;
+  animation: skew 2s linear infinite;
+  width: 10.68vw;
+  height: auto;
+}
+
+.bl34 {
+  position: absolute;
+  overflow: hidden;
+  background-color: #231686;
+  border: 0.534vw #daff02 solid;
+  width: 9.2vw;
+  height: 12vw;
+  margin: 50.89025vw 0 0 90.78125vw;
+}
+.little_snow {
+  position: absolute;
+  width: 6.8085vw;
+  height: 4.20525vw;
+  margin: 0.6675vw 0 0 0.4vw;
+  animation: snow 2s linear infinite;
+}
+.little_snow1 {
+  position: absolute;
+  width: 6.8085vw;
+  height: 4.20525vw;
+  margin: 6.0075vw 0 0 0.4vw;
+  animation: snow 2s linear infinite;
+}
+
+.bl35 {
+  width: 100vw;
+  height: 5.34vw;
+  background-color: #fe572a;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  margin-top: 65.3vw;
+}
+.banana {
+  line-height: 4.6725vw;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  animation: running-animation 5s infinite linear;
+  white-space: nowrap;
+}
+#banana1 {
+  animation: running-animation1 5s infinite linear;
+}
+
+#banana2 {
+  animation: running-animation 5s infinite linear;
+}
+
+.bl36 {
+  width: 33.70875vw;
+  height: 33.70875vw;
+  background-color: #fe572a;
+  position: absolute;
+  margin: 17.21525vw 0 0 33.2415vw;
+}
+.logo {
+  width: 31.3725vw;
+  height: 31.3725vw;
+  position: absolute;
+  animation: logo 10s linear infinite both;
+  animation-duration: 3s;
+  padding: 2.33625vw 0 0 2.33625vw;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+#text_full {
+  position: absolute;
+  margin: 4.6725vw 0 0 1.335vw;
+  animation: advent 3s linear infinite both;
+}
+.text1 {
+  background-color: #fe572a;
+  position: absolute;
+  margin: 0.6675vw 0 0 2.55vw;
+  text-align: center;
+  font-family: "Defectica";
+  font-size: 5.34vw;
+  color: #daff02;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  /* animation: advent 2s linear infinite; */
+  z-index: 1;
+}
+.text {
+  background-color: #fe572a;
+  position: absolute;
+  margin: 13.35vw 0 0 1vw;
+  color: #daff02;
+  text-align: center;
+  font-family: "Defectica";
+  font-size: 5.34vw;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* Пятая секция */
+
+#Fifth_Section {
+  width: 100%;
+  overflow: hidden;
+  height: 12vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #231686;
+}
+.bl3738 {
+  display: flex;
+  flex-direction: row;
+}
+.bl37 {
+  position: relative;
+  background-color: #6053be;
+  width: 12.2vw;
+  height: 12.2vw;
+  border: #fe572a solid 0.5vw;
+}
+
+#tree3 {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  margin: 0.5vw 0 0 1.5vw;
+  animation: scale 2s infinite linear;
+}
+#tree4 {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  margin: 0.5vw 0 0 1.5vw;
+  animation: scale1 2s infinite linear;
+}
+.bl38 {
+  position: absolute;
+  background-color: #daff02;
+  width: 12.2vw;
+  height: 12.2vw;
+  border: #6053be solid 0.5vw;
+  margin-left: 12.2vw;
+}
+#box {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  margin: 1.2vw 0 0 1.7vw;
+  animation: jump1 2s infinite;
+}
+
+.bl39 {
+  position: relative;
+  background-color: #fe572a;
+  width: 50vw;
+  height: 12.2vw;
+  overflow: hidden;
+  flex-direction: row;
+  border: #daff02 solid 0.5vw;
+  margin-left: 24.4vw;
+}
+#toys1 {
+  width: auto;
+  height: 12vw;
+  margin-top: -0.6vw;
+  position: absolute;
+  animation: nevezez_animation1 20s infinite linear;
+}
+#toys2 {
+  width: auto;
+  height: 12vw;
+  margin-top: -0.6vw;
+  position: absolute;
+  animation: nevezez_animation2 20s infinite linear;
+}
+.bl4041 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+.bl40 {
+  position: absolute;
+  background-color: #daff02;
+  width: 12.2vw;
+  height: 12.2vw;
+  border: #6053be solid 0.5vw;
+  margin-left: 74.4vw;
+}
+#tree5 {
+  width: 8.5vw;
+  height: auto;
+  position: absolute;
+  margin: 0.3vw 0 0 1.5vw;
+  animation: scale1 2s infinite linear;
+}
+#tree6 {
+  width: 8.5vw;
+  height: auto;
+  position: absolute;
+  margin: 0.3vw 0 0 1.5vw;
+  animation: scale 2s infinite linear;
+}
+
+.bl41 {
+  position: absolute;
+  background-color: #6053be;
+  width: 12.2vw;
+  height: 12.2vw;
+  border: #fe572a solid 0.5vw;
+  margin-left: 86.6vw;
+}
+#box1 {
+  width: 9vw;
+  height: auto;
+  position: absolute;
+  margin: 1vw 0 0 1.2vw;
+  animation: jump1 2s infinite;
+}
+
+/* Шестая секция */
+
+#Six_Section {
+  width: 100%;
+  overflow: hidden;
+  height: 52vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #231686;
+}
+
+.bl42 {
+  width: 100%;
+  height: 6vw;
+  background-color: #daff02;
+  overflow: hidden;
+  position: relative;
+}
+#line1 {
+  position: absolute;
+  width: auto;
+  height: 5.8vw;
+  animation: nevezez_animation1 5s infinite linear;
+}
+#line2 {
+  position: absolute;
+  width: auto;
+  height: 5.8vw;
+  animation: nevezez_animation2 5s infinite linear;
+}
+
+/* спрайтовая анимация */
+.bl43 {
+  height: 40vw;
+  margin-top: 6vw;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  background-color: #231686;
+}
+.light_group1 {
+  width: 100%;
+  position: relative;
+  animation: opacity 2s infinite linear;
+  z-index: 2;
+}
+#light1 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: -3vw;
+}
+#light2 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: 17vw;
+}
+#light3 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: 37vw;
+}
+#light4 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: 56vw;
+}
+#light5 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: 76vw;
+}
+#background {
+  position: absolute;
+  width: 90%;
+  height: 50vw;
+  margin-left: 5vw;
+  z-index: 1;
+}
+#jump1 {
+  position: absolute;
+  width: 10%;
+  margin: 22.3vw 0 0 6vw;
+  z-index: 2;
+}
+#jump2 {
+  position: absolute;
+  width: 10%;
+  margin: 19.6vw 0 0 20vw;
+  z-index: 2;
+}
+#jump3 {
+  position: absolute;
+  width: 10%;
+  margin: 20vw 0 0 35vw;
+  z-index: 2;
+}
+#jump4 {
+  position: absolute;
+  width: 10%;
+  margin: 18.3vw 0 0 50vw;
+  z-index: 2;
+}
+#jump5 {
+  position: absolute;
+  width: 6%;
+  margin: 20.2vw 0 0 65vw;
+  z-index: 2;
+}
+#jump6 {
+  position: absolute;
+  width: 8%;
+  margin: 21.2vw 0 0 80vw;
+  z-index: 2;
+}
+#robo_mario_section {
+  width: 100%;
+  height: 25vw;
+  display: flex;
+  overflow: hidden;
+  margin: 9.9vw 0 35vw 0;
+  z-index: 3;
+}
+.robo_mario {
+  margin-top: 10vw;
+  width: 6.9vw;
+  height: 9.3vw;
+  background-size: 42.2vw 10.07vw;
+  background-image: url("../images/jump.png");
+  animation: roboWalk 0.5s infinite steps(1), roboMove 8s infinite linear;
+  z-index: 3;
+}
+
+.robo_mario:hover {
+  animation-play-state: paused;
+  filter: invert(100%);
+}
+
+#table {
+  width: 100%;
+  background-color: #231686;
+  height: 11.5vw;
+  position: absolute;
+  margin-top: 28.5vw;
+  z-index: 2;
+}
+.bl44 {
+  width: 100%;
+  height: 6vw;
+  position: absolute;
+  background-color: #daff02;
+  overflow: hidden;
+  margin-top: 46vw;
+}
+
+/* Седьмая секция */
+
+#Seven_Section {
+  width: 100%;
+  height: 24vw;
+  background-color: #231686;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.bl45 {
+  width: 100%;
+  height: 7.7vw;
+  overflow: hidden;
+  position: absolute;
+  background-color: #231686;
+}
+#robo_mario1 {
+  position: absolute;
+  height: 8vw;
+  width: auto;
+  margin-top: -0.2vw;
+  animation: there_here 4s infinite linear;
+}
+#robo_mario2 {
+  position: absolute;
+  height: 8vw;
+  width: auto;
+  margin-top: -0.2vw;
+  animation: there_here1 4s infinite linear;
+}
+
+.bl47 {
+  width: 100%;
+  height: 7vw;
+  background-color: #fe572a;
+  position: absolute;
+  margin-top: 7.7vw;
+}
+
+#name {
+  position: absolute;
+  width: auto;
+  height: 6vw;
+  margin-top: 0.5vw;
+  animation: nevezez_animation1 10s infinite linear;
+}
+#name1 {
+  position: absolute;
+  width: auto;
+  height: 6vw;
+  margin-top: 0.5vw;
+  animation: nevezez_animation2 10s infinite linear;
+}
+
+.bl48 {
+  width: 100%;
+  height: 9.236vw;
+  position: relative;
+  margin-top: 14.7vw;
+  overflow: hidden;
+  background-color: #231686;
+}
+=======
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  width: 100%;
+  background-color: #fff;
+  position: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* Первая секция */
+
+#First_Section {
+  width: 100%;
+  overflow: hidden;
+  height: 37.5vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #231686;
+}
+
+.bl01 {
+  width: 100%;
+  height: 9.236vw;
+  overflow: hidden;
+  position: relative;
+  background-color: #231686;
+}
+#nevezez1 {
+  height: 9.236vw;
+  position: absolute;
+  animation: nevezez_animation1 5s infinite linear;
+}
+#nevezez2 {
+  height: 9.236vw;
+  position: absolute;
+  animation: nevezez_animation2 5s infinite linear;
+}
+
+.bl02 {
+  overflow: hidden;
+  width: 100vw;
+  background-color: #fe572a;
+  height: 5vw;
+}
+
+#rectangle1 {
+  height: 5vw;
+  position: absolute;
+  animation: running-animation2 10s infinite linear;
+}
+#rectangle2 {
+  height: 5vw;
+  position: absolute;
+  animation: running-animation3 10s infinite linear;
+}
+.bl03 {
+  width: 100%;
+  height: 18.472vw;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+#title {
+  position: absolute;
+  width: 85%;
+  margin: 0.694vw 13.8vw 0 13.5vw;
+}
+
+#robot {
+  position: absolute;
+  margin-bottom: 1.3vw;
+  width: 20vw;
+  animation: RobotMove 2.5s infinite linear;
+}
+
+.bl04 {
+  overflow: hidden;
+  width: 100vw;
+  background-color: #fe572a;
+  height: 5vw;
+}
+
+/* Вторая секция */
+
+#Second_Section {
+  width: 100%;
+  height: 39.4vw;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #6053be;
+}
+.bl05 {
+  width: 100%;
+  height: 5.138vw;
+  position: relative;
+  background-color: #231686;
+}
+#candy_star1 {
+  height: 5.138vw;
+  position: absolute;
+  animation: nevezez_animation1 5s infinite linear;
+}
+#candy_star2 {
+  height: 5.138vw;
+  position: absolute;
+  animation: nevezez_animation2 5s infinite linear;
+}
+
+.bl06 {
+  background-color: #dfff0d;
+  width: 12.2vw;
+  display: flex;
+  height: 21.3194vw;
+  position: absolute;
+  margin-top: 5.138vw;
+}
+#tree {
+  position: absolute;
+  margin: 1.38vw 0 0 0.4861vw;
+  width: 11vw;
+  animation: scale 2s infinite linear;
+}
+.bl07 {
+  background-color: #fe572a;
+  border: 0.5vw #97f2ff solid;
+  width: 12.2vw;
+  height: 8.05vw;
+  position: absolute;
+  margin: 26.4194vw 0 0 0;
+}
+#snow1 {
+  position: absolute;
+  margin: 1.38vw 0 0 1.0416vw;
+  width: 4vw;
+  animation: jump1 2s infinite linear;
+}
+#snow2 {
+  position: absolute;
+  margin: 1.0416vw 0 0 6vw;
+  width: 4vw;
+  animation: jump2 2s infinite linear;
+}
+
+.bl0607 {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  flex-direction: row;
+}
+/* 3д вращение */
+
+.bl08 {
+  background-color: #6053be;
+  width: 100vw;
+  margin: 5vw 0 0 0;
+  height: 29.375vw;
+  position: absolute;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  flex-direction: row;
+}
+
+/* По середине */
+.box {
+  position: absolute;
+  width: 10vw;
+  height: 20vw;
+  left: 32vw;
+  top: calc(50%-15vw);
+  left: calc(50%-10vw);
+  transform: perspective(100vw) rotateY(0deg);
+  transform-style: preserve-3d;
+}
+/* .box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7vw;
+  bottom: -10vw;
+  left: 0;
+  background: #000;
+  filter: blur(4vw);
+  opacity: 0.5;
+  transform: rotateX(90deg);
+} */
+.box div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 5vw;
+  left: 0;
+  transform-style: preserve-3d;
+  animation: animate 5s linear infinite;
+}
+.box div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #ffffff00, #ffffff13, #ffffff00);
+  border-radius: 2vw;
+}
+
+.box div img:nth-child(1) {
+  transform: rotateX(0deg);
+}
+.box div img:nth-child(2) {
+  transform: rotateX(45deg);
+}
+.box div img:nth-child(3) {
+  transform: rotateX(-45deg);
+}
+.box div img:nth-child(4) {
+  transform: rotateX(90deg);
+}
+
+/* Слева */
+.box1 {
+  position: absolute;
+  width: 10vw;
+  height: 20vw;
+  left: 10vw;
+  top: calc(50%-15vw);
+  left: calc(50%-10vw);
+  transform: perspective(100vw) rotateY(-45deg);
+  transform-style: preserve-3d;
+}
+/* .box1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7vw;
+  bottom: -10vw;
+  left: 0;
+  background: #000;
+  filter: blur(4vw);
+  opacity: 0.5;
+  transform: rotateX(90deg);
+} */
+.box1 div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 5vw;
+  left: 0;
+  transform-style: preserve-3d;
+  animation: animate 5s linear infinite;
+}
+.box1 div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #ffffff00, #ffffff65, #ffffff00);
+  border-radius: 2vw;
+}
+
+.box1 div img:nth-child(1) {
+  transform: rotateX(0deg);
+}
+.box1 div img:nth-child(2) {
+  transform: rotateX(45deg);
+}
+.box1 div img:nth-child(3) {
+  transform: rotateX(-45deg);
+}
+.box1 div img:nth-child(4) {
+  transform: rotateX(90deg);
+}
+
+/* Справа */
+.box2 {
+  position: absolute;
+  width: 10vw;
+  height: 20vw;
+  left: 53vw;
+  top: calc(50%-15vw);
+  left: calc(50%-10vw);
+  transform: perspective(100vw) rotateY(45deg);
+  transform-style: preserve-3d;
+}
+/* .box2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7vw;
+  bottom: -10vw;
+  left: 0;
+  background: #000;
+  filter: blur(4vw);
+  opacity: 0.5;
+  transform: rotateX(90deg);
+} */
+.box2 div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 5vw;
+  left: 0;
+  transform-style: preserve-3d;
+  animation: animate 5s linear infinite;
+}
+.box2 div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #ffffff00, #ffffff65, #ffffff00);
+  border-radius: 2vw;
+}
+
+.box2 div img:nth-child(1) {
+  transform: rotateX(0deg);
+}
+.box2 div img:nth-child(2) {
+  transform: rotateX(45deg);
+}
+.box2 div img:nth-child(3) {
+  transform: rotateX(-45deg);
+}
+.box2 div img:nth-child(4) {
+  transform: rotateX(90deg);
+}
+.bl09 {
+  background-color: #fe572a;
+  border: 0.5vw #97f2ff solid;
+  width: 12.2vw;
+
+  height: 8.05vw;
+  position: absolute;
+  margin: 5.138vw 0 0 86.5527vw;
+}
+#snow3 {
+  position: absolute;
+  width: 4vw;
+  margin: 1.38vw 0 0 1.0416vw;
+  animation: jump1 2s infinite linear;
+}
+#snow4 {
+  position: absolute;
+  width: 4vw;
+  margin: 1.0416vw 0 0 6vw;
+  animation: jump2 2s infinite linear;
+}
+
+.bl10 {
+  background-color: #dfff0d;
+  width: 12.2vw;
+  height: 21.3194vw;
+  position: absolute;
+  overflow: hidden;
+  margin: 13.15vw 0 0 86.5527vw;
+}
+#tree2 {
+  position: absolute;
+  margin: 1.78vw 0 0 0.7861vw;
+  width: 11vw;
+  animation: scale 2s infinite linear;
+}
+.bl0910 {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  flex-direction: row;
+}
+/* Третья секция */
+
+#Third_Section {
+  width: 100%;
+  overflow: hidden;
+  height: 12.2vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #231686;
+}
+
+.bl11 {
+  width: 100%;
+  height: 5.138vw;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  margin: 34.5138vw 0 0 0;
+  background-color: #231686;
+}
+#candy_star1 {
+  height: 5.138vw;
+  position: absolute;
+  animation: nevezez_animation1 5s infinite linear;
+}
+#candy_star2 {
+  height: 5.138vw;
+  position: absolute;
+  animation: nevezez_animation2 5s infinite linear;
+}
+.bl1213 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+.bl12 {
+  background-color: #dfff0d;
+  border: #fe572a 0.5vw solid;
+  width: 12.2vw;
+  height: 12.2vw;
+  position: relative;
+}
+.venok {
+  position: absolute;
+  margin: 0.5vw 0 0 0.5vw;
+  width: 10vw;
+  animation: venok 1s ease-in-out infinite;
+}
+
+.bl13 {
+  background-color: #685bc7;
+  border: #dfff0d 0.5vw solid;
+  width: 12.2vw;
+  position: relative;
+  height: 12.2vw;
+}
+#dom {
+  position: absolute;
+  margin: 0.2472vw 0 0 1.3vw;
+  width: 9vw;
+  animation: dom 1s ease-in-out infinite;
+}
+
+.bl14 {
+  background-color: #fe572a;
+  width: 100%;
+  height: 12.2vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: ro;
+  position: relative;
+}
+#sani {
+  position: absolute;
+  width: 35vw;
+  margin: 0.3472vw 0 0 27vw;
+  animation: sani 2s infinite linear;
+}
+.bl1516 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+.bl15 {
+  background-color: #685bc7;
+  border: #dfff0d 0.5vw solid;
+  width: 12.2vw;
+  position: relative;
+  margin: 0 0 0 74vw;
+  height: 12.2vw;
+}
+#sock {
+  position: absolute;
+  width: 9vw;
+  margin: 0vw 0 0 1.0416vw;
+  animation: venok 1s ease-in-out infinite;
+}
+.bl16 {
+  background-color: #dfff0d;
+  border: #fe572a 0.5vw solid;
+  width: 12.2vw;
+  position: relative;
+  margin: 0 0 0 0vw;
+  height: 12.2vw;
+}
+#list {
+  position: absolute;
+  width: 9vw;
+  margin: 1.5vw 0 0 1.38vw;
+  animation: dom 1s ease-in-out infinite;
+}
+
+/* Четвертая секция */
+
+#Forth_Section {
+  width: 100%;
+  height: 68vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background-color: #231686;
+}
+
+.bl17 {
+  width: 100vw;
+  height: 5.34vw;
+  background-color: #685bc7;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.banana {
+  line-height: 4.6725vw;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  animation: running-animation 5s infinite linear;
+  white-space: nowrap;
+}
+#banana1 {
+  animation: running-animation1 5s infinite linear;
+}
+
+#banana2 {
+  animation: running-animation 5s infinite linear;
+}
+
+.bl18 {
+  background-color: #231686;
+  position: absolute;
+  width: 33.2415vw;
+  height: 12.1485vw;
+  border: 0.534vw solid #daff02;
+  margin: 5.34vw 0 0 0;
+}
+.snow {
+  position: absolute;
+  margin: 0.20025vw 0 0 0;
+  animation: snow2 1s ease-in-out infinite;
+  width: 10.68vw;
+  height: auto;
+}
+.snow1 {
+  position: absolute;
+  margin: 0.20025vw 0 0 11.01375vw;
+  animation: snow 1s ease-in-out infinite;
+  width: 10.68vw;
+  height: auto;
+}
+.snow2 {
+  position: absolute;
+  margin: 0.20025vw 0 0 22vw;
+  animation: snow2 1s ease-in-out infinite;
+  width: 10.68vw;
+  height: auto;
+}
+
+.bl19 {
+  width: 33.70875vw;
+  height: 8.01vw;
+  background-color: #231686;
+  margin: 5.3472vw 0 0 33.2415vw;
+  position: absolute;
+}
+.robot_goleft {
+  margin: 0 0 0 4.6725vw;
+  position: absolute;
+  width: 25.365vw;
+  height: auto;
+}
+.door {
+  position: absolute;
+  height: 8.01vw;
+  width: auto;
+  animation: door1 2s ease-in-out infinite;
+}
+
+.bl20 {
+  background-color: #231686;
+  width: 24.331vw;
+  height: 12.1485vw;
+  position: absolute;
+  overflow: hidden;
+  margin: 5.3472vw 0 0 66.6vw;
+  border: 0.534vw #fe572a solid;
+}
+.cookie1 {
+  width: 10.68vw;
+  height: auto;
+  position: absolute;
+  margin: 0.6675vw 0 0 1.569vw;
+  animation: jump1 2s infinite;
+}
+.cookie2 {
+  width: 10.68vw;
+  height: auto;
+  position: absolute;
+  margin: 0.6675vw 0 0 11.0475vw;
+  animation: jump2 2s infinite;
+}
+
+.bl21 {
+  width: 9vw;
+  max-width: 9vw;
+  height: 45.59025vw;
+  z-index: 2;
+  margin: 5.34vw 0 0 91vw;
+  background-color: #daff02;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: flex;
+  position: absolute;
+}
+.arrow_right {
+  line-height: 45.59025vw;
+  position: absolute;
+  animation: arrow1 3.5s linear infinite;
+  white-space: nowrap;
+  width: 8.277vw;
+  height: auto;
+}
+#arrow1 {
+  animation: arrow1 3s linear infinite;
+  margin: 0vw 0 0 0.5vw;
+}
+#arrow2 {
+  animation: arrow2 3s linear infinite;
+  margin: 0vw 0 0 0.5vw;
+}
+
+.bl22 {
+  width: 33.20875vw;
+  height: 4.20525vw;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 13.31vw 0 0 33.2415vw;
+}
+.bl23 {
+  width: 4.20525vw;
+  height: 33.20875vw;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 17.4485vw 0 0 29.03625vw;
+  z-index: 2;
+}
+.bl24 {
+  width: 4.20525vw;
+  height: 33.20875vw;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 17.4485vw 0 0 66.45025vw;
+  z-index: 2;
+}
+.bl25 {
+  width: 33.20875vw;
+  height: 4.20525vw;
+  background-color: #daff02;
+  animation: rotate-bg-color 2s infinite;
+  position: absolute;
+  margin: 50.624vw 0 0 33.2415vw;
+}
+
+.bl26 {
+  position: absolute;
+  background-color: #685bc7;
+  width: 8.34375vw;
+  height: 45.3235vw;
+  z-index: 2;
+  margin: 17.4485vw 0 0 0vw;
+  overflow: hidden;
+}
+.arrow_left {
+  line-height: 45.59025vw;
+  position: absolute;
+  width: 8.544vw;
+  height: auto;
+  margin-top: 0.2vw;
+  animation: arrow2 3.5s linear infinite;
+  white-space: nowrap;
+}
+#arrow3 {
+  animation: arrow3 3s linear infinite;
+}
+#arrow4 {
+  animation: arrow4 3s linear infinite;
+}
+
+.bl27 {
+  position: absolute;
+  overflow: hidden;
+  background-color: #daff02;
+  width: 20.69275vw;
+  height: 17.02125vw;
+  z-index: 2;
+  margin: 17.4485vw 0 0 8.34375vw;
+  border: 0.534vw #fe572a solid;
+}
+.clock1 {
+  position: absolute;
+  width: 16.6875vw;
+  height: auto;
+  margin: -0.6675vw 0 0 1.66875vw;
+}
+.clock2 {
+  position: absolute;
+  width: 16.6875vw;
+  height: auto;
+  margin: -0.6675vw 0 0 1.66875vw;
+  animation: rotate 3s infinite;
+}
+
+.bl28 {
+  position: absolute;
+  overflow: hidden;
+  background-color: #685bc7;
+  width: 20.79275vw;
+  height: 16.25425vw;
+  z-index: 2;
+  margin: 34.46975vw 0 0 8.27375vw;
+}
+.surprize {
+  position: absolute;
+  margin: 0.201vw 0 0 2.0025vw;
+  width: 16.02vw;
+  height: auto;
+  animation: scale 2s infinite linear;
+}
+
+.bl29 {
+  width: 24.8vw;
+  height: 12vw;
+  position: absolute;
+  border: 0.534vw solid #231686;
+  background-color: #daff02;
+  margin: 50.8vw 0 0 8.34375vw;
+  z-index: 2;
+}
+.car {
+  position: absolute;
+  animation: logo 2s infinite linear;
+  width: 12.015vw;
+  height: auto;
+}
+
+.bl30 {
+  background-color: #231686;
+  position: absolute;
+  width: 33.00875vw;
+  height: 8.07675vw;
+  margin: 54.8625vw 0 0 33.3415vw;
+}
+.door1 {
+  position: absolute;
+  animation: door2 2s ease-in-out infinite;
+  margin: 0 65.075vw 0 0;
+  width: 33.20875vw;
+}
+.robot_goright {
+  margin: 0 0 14.2578vw 4.6725vw;
+  position: absolute;
+  width: 25.365vw;
+  height: auto;
+}
+
+.bl31 {
+  background-color: #fe572a;
+  position: absolute;
+  margin: 17.3485vw 0 0 70.0754vw;
+  width: 8vw;
+  height: 33.38875vw;
+  overflow: hidden;
+  z-index: 4;
+}
+.re {
+  animation: bounce 2s infinite;
+  width: 7.476vw;
+  height: auto;
+  margin-left: 0.267vw;
+}
+
+.bl32 {
+  position: absolute;
+  width: 12.88275vw;
+  height: 45.55vw;
+  z-index: 3;
+  background-color: #685bc7;
+  margin: 17.4485vw 0 0 78.0053vw;
+}
+
+.star {
+  position: absolute;
+  width: 6.675vw;
+  height: auto;
+  margin: 4.6725vw 0 0 3.1375vw;
+  background-size: 100% 100%;
+  animation: snow_rot 3s ease-in-out infinite both;
+}
+.star1 {
+  position: absolute;
+  width: 6.675vw;
+  height: auto;
+  margin: 19.3575vw 0 0 3.1375vw;
+  background-size: 100% 100%;
+  animation: snow_rot 3s ease-in-out infinite both;
+}
+.star2 {
+  position: absolute;
+  width: 6.675vw;
+  height: auto;
+  margin: 33.375vw 0 0 3.1375vw;
+  background-size: 100% 100%;
+  animation: snow_rot 3s ease-in-out infinite both;
+}
+
+.bl33 {
+  position: absolute;
+  background-color: #231686;
+  width: 11.7vw;
+  height: 12.21525vw;
+  z-index: 3;
+  overflow: hidden;
+  border: 0.534vw solid #fe572a;
+  margin: 50.62375vw 0 0 66.4vw;
+}
+.berry {
+  padding: 0.267vw 0 0 1.13475vw;
+  animation: skew 2s linear infinite;
+  width: 10.68vw;
+  height: auto;
+}
+
+.bl34 {
+  position: absolute;
+  overflow: hidden;
+  background-color: #231686;
+  border: 0.534vw #daff02 solid;
+  width: 9.2vw;
+  height: 12vw;
+  margin: 50.89025vw 0 0 90.78125vw;
+}
+.little_snow {
+  position: absolute;
+  width: 6.8085vw;
+  height: 4.20525vw;
+  margin: 0.6675vw 0 0 0.4vw;
+  animation: snow 2s linear infinite;
+}
+.little_snow1 {
+  position: absolute;
+  width: 6.8085vw;
+  height: 4.20525vw;
+  margin: 6.0075vw 0 0 0.4vw;
+  animation: snow 2s linear infinite;
+}
+
+.bl35 {
+  width: 100vw;
+  height: 5.34vw;
+  background-color: #fe572a;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  margin-top: 65.3vw;
+}
+.banana {
+  line-height: 4.6725vw;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  animation: running-animation 5s infinite linear;
+  white-space: nowrap;
+}
+#banana1 {
+  animation: running-animation1 5s infinite linear;
+}
+
+#banana2 {
+  animation: running-animation 5s infinite linear;
+}
+
+.bl36 {
+  width: 33.70875vw;
+  height: 33.70875vw;
+  background-color: #fe572a;
+  position: absolute;
+  margin: 17.21525vw 0 0 33.2415vw;
+}
+.logo {
+  width: 31.3725vw;
+  height: 31.3725vw;
+  position: absolute;
+  animation: logo 10s linear infinite both;
+  animation-duration: 3s;
+  padding: 2.33625vw 0 0 2.33625vw;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+#text_full {
+  position: absolute;
+  margin: 4.6725vw 0 0 1.335vw;
+  animation: advent 3s linear infinite both;
+}
+.text1 {
+  background-color: #fe572a;
+  position: absolute;
+  margin: 0.6675vw 0 0 2.55vw;
+  text-align: center;
+  font-family: "Defectica";
+  font-size: 5.34vw;
+  color: #daff02;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  /* animation: advent 2s linear infinite; */
+  z-index: 1;
+}
+.text {
+  background-color: #fe572a;
+  position: absolute;
+  margin: 13.35vw 0 0 1vw;
+  color: #daff02;
+  text-align: center;
+  font-family: "Defectica";
+  font-size: 5.34vw;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* Пятая секция */
+
+#Fifth_Section {
+  width: 100%;
+  overflow: hidden;
+  height: 12vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #231686;
+}
+.bl3738 {
+  display: flex;
+  flex-direction: row;
+}
+.bl37 {
+  position: relative;
+  background-color: #6053be;
+  width: 12.2vw;
+  height: 12.2vw;
+  border: #fe572a solid 0.5vw;
+}
+
+#tree3 {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  margin: 0.5vw 0 0 1.5vw;
+  animation: scale 2s infinite linear;
+}
+#tree4 {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  margin: 0.5vw 0 0 1.5vw;
+  animation: scale1 2s infinite linear;
+}
+.bl38 {
+  position: absolute;
+  background-color: #daff02;
+  width: 12.2vw;
+  height: 12.2vw;
+  border: #6053be solid 0.5vw;
+  margin-left: 12.2vw;
+}
+#box {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  margin: 1.2vw 0 0 1.7vw;
+  animation: jump1 2s infinite;
+}
+
+.bl39 {
+  position: relative;
+  background-color: #fe572a;
+  width: 50vw;
+  height: 12.2vw;
+  overflow: hidden;
+  flex-direction: row;
+  border: #daff02 solid 0.5vw;
+  margin-left: 24.4vw;
+}
+#toys1 {
+  width: auto;
+  height: 12vw;
+  margin-top: -0.6vw;
+  position: absolute;
+  animation: nevezez_animation1 20s infinite linear;
+}
+#toys2 {
+  width: auto;
+  height: 12vw;
+  margin-top: -0.6vw;
+  position: absolute;
+  animation: nevezez_animation2 20s infinite linear;
+}
+.bl4041 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+.bl40 {
+  position: absolute;
+  background-color: #daff02;
+  width: 12.2vw;
+  height: 12.2vw;
+  border: #6053be solid 0.5vw;
+  margin-left: 74.4vw;
+}
+#tree5 {
+  width: 8.5vw;
+  height: auto;
+  position: absolute;
+  margin: 0.3vw 0 0 1.5vw;
+  animation: scale1 2s infinite linear;
+}
+#tree6 {
+  width: 8.5vw;
+  height: auto;
+  position: absolute;
+  margin: 0.3vw 0 0 1.5vw;
+  animation: scale 2s infinite linear;
+}
+
+.bl41 {
+  position: absolute;
+  background-color: #6053be;
+  width: 12.2vw;
+  height: 12.2vw;
+  border: #fe572a solid 0.5vw;
+  margin-left: 86.6vw;
+}
+#box1 {
+  width: 9vw;
+  height: auto;
+  position: absolute;
+  margin: 1vw 0 0 1.2vw;
+  animation: jump1 2s infinite;
+}
+
+/* Шестая секция */
+
+#Six_Section {
+  width: 100%;
+  overflow: hidden;
+  height: 52vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #231686;
+}
+
+.bl42 {
+  width: 100%;
+  height: 6vw;
+  background-color: #daff02;
+  overflow: hidden;
+  position: relative;
+}
+#line1 {
+  position: absolute;
+  width: auto;
+  height: 5.8vw;
+  animation: nevezez_animation1 5s infinite linear;
+}
+#line2 {
+  position: absolute;
+  width: auto;
+  height: 5.8vw;
+  animation: nevezez_animation2 5s infinite linear;
+}
+
+/* спрайтовая анимация */
+.bl43 {
+  height: 40vw;
+  margin-top: 6vw;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  background-color: #231686;
+}
+.light_group1 {
+  width: 100%;
+  position: relative;
+  animation: opacity 2s infinite linear;
+  z-index: 2;
+}
+#light1 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: -3vw;
+}
+#light2 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: 17vw;
+}
+#light3 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: 37vw;
+}
+#light4 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: 56vw;
+}
+#light5 {
+  position: absolute;
+  width: 27%;
+  height: 10vw;
+  z-index: 2;
+  margin-left: 76vw;
+}
+#background {
+  position: absolute;
+  width: 90%;
+  height: 50vw;
+  margin-left: 5vw;
+  z-index: 1;
+}
+#jump1 {
+  position: absolute;
+  width: 10%;
+  margin: 22.3vw 0 0 6vw;
+  z-index: 2;
+}
+#jump2 {
+  position: absolute;
+  width: 10%;
+  margin: 19.6vw 0 0 20vw;
+  z-index: 2;
+}
+#jump3 {
+  position: absolute;
+  width: 10%;
+  margin: 20vw 0 0 35vw;
+  z-index: 2;
+}
+#jump4 {
+  position: absolute;
+  width: 10%;
+  margin: 18.3vw 0 0 50vw;
+  z-index: 2;
+}
+#jump5 {
+  position: absolute;
+  width: 6%;
+  margin: 20.2vw 0 0 65vw;
+  z-index: 2;
+}
+#jump6 {
+  position: absolute;
+  width: 8%;
+  margin: 21.2vw 0 0 80vw;
+  z-index: 2;
+}
+#robo_mario_section {
+  width: 100%;
+  height: 25vw;
+  display: flex;
+  overflow: hidden;
+  margin: 9.9vw 0 35vw 0;
+  z-index: 3;
+}
+.robo_mario {
+  margin-top: 10vw;
+  width: 6.9vw;
+  height: 9.3vw;
+  background-size: 42.2vw 10.07vw;
+  background-image: url("../images/jump.png");
+  animation: roboWalk 0.5s infinite steps(1), roboMove 8s infinite linear;
+  z-index: 3;
+}
+
+.robo_mario:hover {
+  animation-play-state: paused;
+  filter: invert(100%);
+}
+
+#table {
+  width: 100%;
+  background-color: #231686;
+  height: 11.5vw;
+  position: absolute;
+  margin-top: 28.5vw;
+  z-index: 2;
+}
+.bl44 {
+  width: 100%;
+  height: 6vw;
+  position: absolute;
+  background-color: #daff02;
+  overflow: hidden;
+  margin-top: 46vw;
+}
+
+/* Седьмая секция */
+
+#Seven_Section {
+  width: 100%;
+  height: 24vw;
+  background-color: #231686;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.bl45 {
+  width: 100%;
+  height: 7.7vw;
+  overflow: hidden;
+  position: absolute;
+  background-color: #231686;
+}
+#robo_mario1 {
+  position: absolute;
+  height: 8vw;
+  width: auto;
+  margin-top: -0.2vw;
+  animation: there_here 4s infinite linear;
+}
+#robo_mario2 {
+  position: absolute;
+  height: 8vw;
+  width: auto;
+  margin-top: -0.2vw;
+  animation: there_here1 4s infinite linear;
+}
+
+.bl47 {
+  width: 100%;
+  height: 7vw;
+  background-color: #fe572a;
+  position: absolute;
+  margin-top: 7.7vw;
+}
+
+#name {
+  position: absolute;
+  width: auto;
+  height: 6vw;
+  margin-top: 0.5vw;
+  animation: nevezez_animation1 10s infinite linear;
+}
+#name1 {
+  position: absolute;
+  width: auto;
+  height: 6vw;
+  margin-top: 0.5vw;
+  animation: nevezez_animation2 10s infinite linear;
+}
+
+.bl48 {
+  width: 100%;
+  height: 9.236vw;
+  position: relative;
+  margin-top: 14.7vw;
+  overflow: hidden;
+  background-color: #231686;
+}
+>>>>>>> 7c29837ccc7ae00ae20979afa342a124e39746d3
