@@ -302,7 +302,7 @@
     margin: 22vw 0 0 0;
   }
 }
-@media (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .bl0910 {
     margin: 0 0 0 1.2vw;
   }
