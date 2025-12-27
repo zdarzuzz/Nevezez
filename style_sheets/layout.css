@@ -92,7 +92,7 @@ body {
 /* Вторая секция */
 
 #Second_Section {
-  width: 100%;
+  width: 100vw;
   height: 39.4vw;
   display: flex;
   position: relative;
@@ -499,7 +499,7 @@ body {
 /* Четвертая секция */
 
 #Forth_Section {
-  width: 100%;
+  width: 100vw;
   height: 68vw;
   display: flex;
   flex-direction: column;
