@@ -15,8 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Первая секция */
-
 #First_Section {
   width: 100%;
   overflow: hidden;
@@ -89,8 +87,6 @@ body {
   height: 5vw;
 }
 
-/* Вторая секция */
-
 #Second_Section {
   width: 100vw;
   height: 39.4vw;
@@ -158,7 +154,6 @@ body {
   z-index: 2;
   flex-direction: row;
 }
-/* 3д вращение */
 
 .bl08 {
   background-color: #6053be;
@@ -172,7 +167,6 @@ body {
   flex-direction: row;
 }
 
-/* По середине */
 .box {
   position: absolute;
   width: 10vw;
@@ -183,18 +177,7 @@ body {
   transform: perspective(100vw) rotateY(0deg);
   transform-style: preserve-3d;
 }
-/* .box::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 7vw;
-  bottom: -10vw;
-  left: 0;
-  background: #000;
-  filter: blur(4vw);
-  opacity: 0.5;
-  transform: rotateX(90deg);
-} */
+
 .box div {
   position: absolute;
   height: 100%;
@@ -228,7 +211,6 @@ body {
   transform: rotateX(90deg);
 }
 
-/* Слева */
 .box1 {
   position: absolute;
   width: 10vw;
@@ -239,18 +221,7 @@ body {
   transform: perspective(100vw) rotateY(-45deg);
   transform-style: preserve-3d;
 }
-/* .box1::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 7vw;
-  bottom: -10vw;
-  left: 0;
-  background: #000;
-  filter: blur(4vw);
-  opacity: 0.5;
-  transform: rotateX(90deg);
-} */
+
 .box1 div {
   position: absolute;
   height: 100%;
@@ -284,7 +255,6 @@ body {
   transform: rotateX(90deg);
 }
 
-/* Справа */
 .box2 {
   position: absolute;
   width: 10vw;
@@ -295,18 +265,7 @@ body {
   transform: perspective(100vw) rotateY(45deg);
   transform-style: preserve-3d;
 }
-/* .box2::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 7vw;
-  bottom: -10vw;
-  left: 0;
-  background: #000;
-  filter: blur(4vw);
-  opacity: 0.5;
-  transform: rotateX(90deg);
-} */
+
 .box2 div {
   position: absolute;
   height: 100%;
@@ -381,7 +340,6 @@ body {
   z-index: 2;
   flex-direction: row;
 }
-/* Третья секция */
 
 #Third_Section {
   width: 100%;
@@ -495,8 +453,6 @@ body {
   margin: 1.5vw 0 0 1.38vw;
   animation: dom 1s ease-in-out infinite;
 }
-
-/* Четвертая секция */
 
 #Forth_Section {
   width: 100vw;
@@ -921,7 +877,7 @@ body {
   font-style: normal;
   line-height: 100%;
   text-transform: uppercase;
-  /* animation: advent 2s linear infinite; */
+
   z-index: 1;
 }
 .text {
@@ -937,8 +893,6 @@ body {
   text-transform: uppercase;
   z-index: 1;
 }
-
-/* Пятая секция */
 
 #Fifth_Section {
   width: 100%;
@@ -1059,8 +1013,6 @@ body {
   animation: jump1 2s infinite;
 }
 
-/* Шестая секция */
-
 #Six_Section {
   width: 100%;
   overflow: hidden;
@@ -1091,7 +1043,6 @@ body {
   animation: nevezez_animation2 5s infinite linear;
 }
 
-/* спрайтовая анимация */
 .bl43 {
   height: 40vw;
   margin-top: 6vw;
@@ -1223,8 +1174,6 @@ body {
   overflow: hidden;
   margin-top: 46vw;
 }
-
-/* Седьмая секция */
 
 #Seven_Section {
   width: 100%;

@@ -1,37 +1,3 @@
-/* спрайтовые анимации */
-/* @keyframes marioWalk {
-  0% {
-    background-position-x: 0;
-  }
-  25% {
-    background-position-x: -68px;
-  }
-  50% {
-    background-position-x: -136px;
-  }
-  75% {
-    background-position-x: -204px;
-  }
-}
-
-@keyframes marioMove {
-  0% {
-    margin-left: -68px;
-  }
-  48% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-50px);
-  }
-  52% {
-    transform: translateY(0px);
-  }
-  100% {
-    margin-left: 100%;
-  }
-} */
-
 @keyframes nevezez_animation1 {
   0% {
     transform: translateX(0%);

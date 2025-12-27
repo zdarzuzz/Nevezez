@@ -32,7 +32,6 @@
   }
 }
 @media (max-width: 500px) {
-  /* Первая секция */
   #First_Section {
     height: 47vw;
   }
@@ -43,7 +42,7 @@
   #nevezez2 {
     height: 90%;
   }
-  /* Вторая секция */
+
   #Second_Section {
     height: 160vw;
     position: relative;
@@ -150,7 +149,7 @@
   .bl0910 {
     margin: 50vw 0 0 0;
   }
-  /* Третья секция */
+
   #Third_Section {
     position: relative;
     width: 100%;
@@ -213,7 +212,7 @@
     width: 90%;
     margin: 5vw 0 0 3vw;
   }
-  /* Четвёртая секция */
+
   #Forth_Section {
     height: 73vw;
   }
@@ -228,7 +227,6 @@
     margin-top: 65.3vw;
   }
 
-  /* Пятая секция */
   #Fifth_Section {
     height: 130vw;
     flex-direction: column;
@@ -296,7 +294,6 @@
     margin: 5vw 0 0 5vw;
   }
 
-  /* Шестая секция */
   #Six_Section {
     height: 60vw;
   }
@@ -318,7 +315,6 @@
     margin-top: 50vw;
   }
 
-  /* Седьмая секция */
   #Seven_Section {
     height: 41vw;
   }
