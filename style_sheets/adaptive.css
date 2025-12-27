@@ -1,3 +1,36 @@
+@media screen and (max-width: 1440px) {
+  .bl0910 {
+    margin: 0 0 0 1.2vw;
+  }
+  .bl0607 {
+    margin: -5.2vw 0 0 0;
+  }
+  .box {
+    margin: 0 0 0 13vw;
+  }
+  .box1 {
+    margin: 0 0 0 13vw;
+  }
+  .box2 {
+    margin: 0 0 0 13vw;
+  }
+  .bl1516 {
+    margin: 0 0 0 1.6vw;
+  }
+  .asemetry {
+    margin: -5.5vw 0 0 0;
+  }
+  .bl35 {
+    margin: 62.7vw 0 0 0;
+  }
+  .bl39 {
+    width: 51vw;
+    margin: 0 0 0 12.3vw;
+  }
+  .bl4041 {
+    margin: 0 0 0 1.2vw;
+  }
+}
 @media (max-width: 500px) {
   /* Первая секция */
   #First_Section {
@@ -300,38 +333,5 @@
   .bl48 {
     height: 20vw;
     margin: 22vw 0 0 0;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .bl0910 {
-    margin: 0 0 0 1.2vw;
-  }
-  .bl0607 {
-    margin: -5.2vw 0 0 0;
-  }
-  .box {
-    margin: 0 0 0 13vw;
-  }
-  .box1 {
-    margin: 0 0 0 13vw;
-  }
-  .box2 {
-    margin: 0 0 0 13vw;
-  }
-  .bl1516 {
-    margin: 0 0 0 1.6vw;
-  }
-  .asemetry {
-    margin: -5.5vw 0 0 0;
-  }
-  .bl35 {
-    margin: 62.7vw 0 0 0;
-  }
-  .bl39 {
-    width: 51vw;
-    margin: 0 0 0 12.3vw;
-  }
-  .bl4041 {
-    margin: 0 0 0 1.2vw;
   }
 }
